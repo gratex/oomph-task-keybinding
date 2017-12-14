@@ -34,7 +34,7 @@ pushd $DIR/../oomph-task-keybinding-gh-pages
     git pull
     mkdir -p repository
     rm -rf repository/*
-    cp -r $DIR/com.gratex.oomph.task.maven.site/target/repository/* repository/
+    cp -r $DIR/com.gratex.oomph.task.keybinding.site/target/repository/* repository/
     git add -A
     git commit -m "release $VERSION"
     git tag -a -m "release $VERSION" "$VERSION"
