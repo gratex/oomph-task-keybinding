@@ -578,6 +578,7 @@ public class KeyBindingTaskImpl extends SetupTaskImpl implements KeyBindingTask
 
   private boolean isEqual(KeyBindingContext keyBindingContext, KeyBinding keyBinding) throws Exception
   {
+    ParameterizedCommand parameterizedCommand = keyBinding.getParameterizedCommand();
     if (!ObjectUtil.equals(keyBinding.getSchemeId(), getScheme()))
     {
       return false;
@@ -597,6 +598,7 @@ public class KeyBindingTaskImpl extends SetupTaskImpl implements KeyBindingTask
     {
       return false;
     }
+
     if (hasKeys())
     {
       KeySequence keySequence = KeySequence.getInstance(getKeys());
@@ -606,7 +608,6 @@ public class KeyBindingTaskImpl extends SetupTaskImpl implements KeyBindingTask
       }
     }
 
-    ParameterizedCommand parameterizedCommand = keyBinding.getParameterizedCommand();
     if (parameterizedCommand == null || !ObjectUtil.equals(parameterizedCommand.getId(), getCommand()))
     {
       return false;
@@ -641,27 +642,27 @@ public class KeyBindingTaskImpl extends SetupTaskImpl implements KeyBindingTask
         while (iterator.hasNext())
         {
           Binding binding = iterator.next();
-          if (binding.getContextId() != keyBindingContext.getID())
+          if (!ObjectUtil.equals(binding.getContextId(), keyBindingContext.getID()))
           {
             continue;
           }
 
-          if (binding.getParameterizedCommand() == null || binding.getParameterizedCommand().getId() != getParameterizedCommand().getId())
+          if (binding.getParameterizedCommand() == null || !ObjectUtil.equals(binding.getParameterizedCommand().getId(), getParameterizedCommand().getId()))
           {
             continue;
           }
 
-          if (binding.getLocale() != getLocale())
+          if (!ObjectUtil.equals(binding.getLocale(), getLocale()))
           {
             continue;
           }
 
-          if (binding.getPlatform() != getPlatform())
+          if (!ObjectUtil.equals(binding.getPlatform(), getPlatform()))
           {
             continue;
           }
 
-          if (binding.getSchemeId() != getScheme())
+          if (!ObjectUtil.equals(binding.getSchemeId(), getScheme()))
           {
             continue;
           }
