@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/com.gratex.oomph.task.keybinding/src"
+    creationIcons="false"
+    editorDirectory=""
+    modelPluginID="com.gratex.oomph.task.keybinding"
+    modelName="Keybinding"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="5.0"
+    copyrightFields="false"
+    optimizedHasChildren="true"
+    usedGenPackages="../../org.eclipse.oomph.setup.workbench/model/Workbench.genmodel#//workbench ../../org.eclipse.oomph.base/model/Base.genmodel#//base ../../org.eclipse.oomph.setup/model/Setup.genmodel#//setup"
+    testsDirectory=""
+    importOrganizing="true"
+    cleanup="true">
+  <foreignModel>Keybinding.ecore</foreignModel>
+  <genPackages
+      prefix="Keybinding"
+      basePackage="com.gratex.oomph.task"
+      disposableProviderFactory="true"
+      multipleEditorPages="false"
+      generateModelWizard="false"
+      extensibleProviderFactory="true"
+      childCreationExtenders="true"
+      fileExtensions="setup"
+      publicationLocation="/com.gratex.oomph.task.keybinding/model/Keybinding-1.0.ecore"
+      ecorePackage="Keybinding.ecore#/">
+    <genClasses ecoreClass="Keybinding.ecore#//KeybindingTask"/>
+  </genPackages>
+</genmodel:GenModel>

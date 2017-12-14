@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<setup:Project
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:keybinding="http://www.gratex.com/oomph/task/keybinding/1.0"
+    xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
+    xsi:schemaLocation="http://www.gratex.com/oomph/task/keybinding/1.0 http://www.gratex.com/oomph/task/keybinding/schemas/Keybinding-1.0.ecore"
+    name="test"
+    label="Test keybinding">
+  <stream name="master">
+    <setupTask
+        xsi:type="keybinding:KeyBindingTask"
+        platform=""
+        command="org.eclipse.ui.window.nextEditor">
+      <context/>
+      <description>Asdf</description>
+    </setupTask>
+    <setupTask
+        xsi:type="keybinding:KeyBindingTask"
+        locale=""
+        keys="CTRL+TAB"
+        command="org.eclipse.ui.window.nextEditor">
+      <context/>
+    </setupTask>
+  </stream>
+  <description>Test keybinding</description>
+</setup:Project>
