@@ -23,7 +23,7 @@ import org.eclipse.emf.ecore.EReference;
  * <!-- end-user-doc -->
  * @see com.gratex.oomph.task.keybinding.KeybindingFactory
  * @model kind="package"
- *        annotation="http://www.eclipse.org/emf/2002/Ecore schemaLocation='http://www.gratex.com/oomph/task/keybinding/schemas/Keybinding-1.0.ecore'"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore schemaLocation='https://raw.githubusercontent.com/gratex/oomph-task-keybinding/master/com.gratex.oomph.task.keybinding/model/Keybinding-1.0.ecore'"
  * @generated
  */
 public interface KeybindingPackage extends EPackage

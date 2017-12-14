@@ -364,7 +364,7 @@ public class KeybindingPackageImpl extends EPackageImpl implements KeybindingPac
         IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     // Create resource
-    createResource("http://www.gratex.com/oomph/task/keybinding/schemas/Keybinding-1.0.ecore");
+    createResource("https://raw.githubusercontent.com/gratex/oomph-task-keybinding/master/com.gratex.oomph.task.keybinding/model/Keybinding-1.0.ecore");
 
     // Create annotations
     // http://www.eclipse.org/emf/2002/Ecore
@@ -386,7 +386,8 @@ public class KeybindingPackageImpl extends EPackageImpl implements KeybindingPac
   protected void createEcoreAnnotations()
   {
     String source = "http://www.eclipse.org/emf/2002/Ecore";
-    addAnnotation(this, source, new String[] { "schemaLocation", "http://www.gratex.com/oomph/task/keybinding/schemas/Keybinding-1.0.ecore" });
+    addAnnotation(this, source, new String[] { "schemaLocation",
+        "https://raw.githubusercontent.com/gratex/oomph-task-keybinding/master/com.gratex.oomph.task.keybinding/model/Keybinding-1.0.ecore" });
   }
 
   /**
@@ -399,7 +400,7 @@ public class KeybindingPackageImpl extends EPackageImpl implements KeybindingPac
   {
     String source = "http://www.eclipse.org/oomph/setup/Enablement";
     addAnnotation(keyBindingTaskEClass, source, new String[] { "variableName", "p2.keybinding", "repository",
-        "https://gratex.github.io/oomph-task-keybinding/repository", "installableUnits", "com.gratex.oomph.task.keybinding.feature.group" });
+        "https://gratex.github.io/oomph-task-keybinding/repository", "installableUnits", "com.gratex.oomph.task.keybinding.feature.feature.group\n" });
   }
 
   /**

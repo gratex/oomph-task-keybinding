@@ -25,7 +25,7 @@ import org.eclipse.emf.common.util.EList;
  * </ul>
  *
  * @see com.gratex.oomph.task.keybinding.KeybindingPackage#getKeyBindingTask()
- * @model annotation="http://www.eclipse.org/oomph/setup/Enablement variableName='p2.keybinding' repository='https://gratex.github.io/oomph-task-keybinding/repository' installableUnits='com.gratex.oomph.task.keybinding.feature.group'"
+ * @model annotation="http://www.eclipse.org/oomph/setup/Enablement variableName='p2.keybinding' repository='https://gratex.github.io/oomph-task-keybinding/repository' installableUnits='com.gratex.oomph.task.keybinding.feature.feature.group\n'"
  *        annotation="http://www.eclipse.org/oomph/setup/ValidTriggers triggers='STARTUP MANUAL'"
  * @generated
  */
